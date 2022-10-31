@@ -30,3 +30,34 @@ console.log(isFullAge)
 
 console.log(current_year - 1991 > current_year - 2018, 'result is 4 so True')
 let some_bool = true
+
+
+// // Coding challenge #1
+// const mark_weight = 95
+// const mark_height = 1.88
+// const john_weight = 85
+// const john_height = 1.76
+
+// let bmi1 = mark_weight / mark_height ** 2
+// let bmi2 = john_weight / john_height ** 2
+// console.log('Marks bmi: ' + bmi1, 'Johns bmi: ', bmi2)
+// if (bmi1 > bmi2)
+//     console.log('Mark has a heigher BMI score')
+// else
+//     console.log('John has the higher BMI score')
+
+//String template literals?
+//https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648167#overview
+const myName = 'Joe'
+const myage = 2022 - 1988
+let string_sentance = `I'm ${myName} and I'm ${myage} years old`
+console.log(string_sentance)
+
+//multipline strings 
+console.log('string with \n\
+multiple \n\
+lines')
+//with string literals
+console.log(`strings with 
+multiple sring leteral or
+template literal?`)
