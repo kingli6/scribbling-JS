@@ -1,54 +1,19 @@
 'use strict';
 
-console.log('Function declaration can be called before initialization')
-let j = calcAge(1988, 2050);
-console.log(j);
+const sum = function (array) {
+    let num = 0;
+    array.forEach(item => num += item)
+    return num
 
-//FUnction declaration
-function calcAge(year, willbe = 2022) {
-    const now = 2022;
-    if (willbe === 2022) {
-        return now - year;
-    }else { return willbe - year}
+}
+const average = array => sum(array) / array.length;
+
+function checkWinner(data1, data2) {
+    if (average(data1) > average(data2)) {
+        console.log('data1 wins')
+    } else if (average(data1) < average(data2)) {
+        console.log('data2 wins')
+    } else { 'draw' }
 }
 
-
-// Function expression or annoymous function 
-const annonymous = function(year, willbe=2022) {
-    const now = 2022;
-    if (willbe === 2022) {
-        return now - year;
-    }else { return willbe - year}
-}
-
-console.log('Lilys age ' + annonymous(1960)) //62 years old
-
-
-//notes
-//Function in javascript is a value type.... So you can store it in a variable. 
-
-
-//https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648227#overview
-//Arrow function
-// parameter => expression
-const arrYear = year => 2022 - year; 
-console.log(arrYear(1988))
-
-//if there's longer expression, you need curly bracers {} and return keyword.
-const birthYear = age => {
-    const now = 2022;
-    return now - age;
-}
-console.log(birthYear(64))
-
-//If you have multiple parameters, you use (year, retirement)
-
-const retirementYear = (_birthYear, _name) => {
-    return`You will retire in ${_birthYear + 65}, ${_name}`
-}
-console.log(retirementYear(1988, 'joe'))
-
-//Since the above is just one line
-const retirementYear2 = (_birthYear, _name) => `You will retire in ${_birthYear + 65}, ${_name}`
-
-console.log(retirementYear2(1988, 'joe'))
+checkWinner([85, 54, 41], [23, 34, 27]);
