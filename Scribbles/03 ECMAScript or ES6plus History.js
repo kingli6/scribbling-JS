@@ -1,5 +1,5 @@
 /*
-
+https://github.com/tc39/proposals
 https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648209#overview
 - Creation of javascript, ECMA a independent standardizing company set standards to javascript so it can be used 
     eveywhere on the web browser. THAT standardised javaScript was called ECMAScript or ES1
