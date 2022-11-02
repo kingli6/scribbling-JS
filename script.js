@@ -2,6 +2,7 @@
 const calcAge = function(birthyear) {
     return 2022-birthyear;
 }
+const average = array => sum(array) / array.length;
 
 const years = [1988, 1990, 1975];
 const newArray =[]
