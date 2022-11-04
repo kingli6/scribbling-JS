@@ -1,0 +1,3 @@
+VS CODE TIPS!
+
+ alt double click on similar names has the same effect as ctrl + D 
