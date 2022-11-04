@@ -1,3 +1,15 @@
 VS CODE TIPS!
 
  alt double click on similar names has the same effect as ctrl + D 
+
+
+// user snippets!!!!!!!!!!!
+//C:\Users\jonat\AppData\Roaming\Code\User\snippets\globalsnippetsNov2022.code-snippets
+//https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648339#overview
+file - preference- user snippets- create a global snippet
+
+ //setting up formatting
+ a. installed prettier extension
+ b. In settings, default formatter chose prettier, and format on save option enabled.
+ https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648339#overview
+ c. use .prettierrc file in your project for customizing formatting.
