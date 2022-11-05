@@ -11,4 +11,19 @@ Step 3. Don't be afraid to do as much
 
 Step 4. For bigger problems, write pseudo-code
     before writing the actual code.
-*/
+
+https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648353#overview
+    */
+
+//Exercise
+
+const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+
+/**
+ * foreach item in list:
+ *      if not num: continue
+ * numH, numL
+ * if numL > item:
+ *      numL = item
+ *
+ */
