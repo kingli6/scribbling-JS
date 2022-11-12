@@ -1,20 +1,15 @@
-VS CODE TIPS!
+Notes
+JS Notes---------------------------------------
+BLOCK SCOPE (ES6/JS)
+https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648481#overview 
+    -Variables are accessible only inside block (block scoped)
+    -However, this only applies to let and const variables. 
+        var is accessible anywhere?????
+    -Functions are also block scoped (only in 'strict mode';)   timestamp 6:30 
+        does this mean otherwise, you have access?
 
- alt double click on similar names has the same effect as ctrl + D 
 
-
-// user snippets!!!!!!!!!!!
-//C:\Users\jonat\AppData\Roaming\Code\User\snippets\globalsnippetsNov2022.code-snippets
-//https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648339#overview
-file - preference- user snippets- create a global snippet
-
- //setting up formatting
- a. installed prettier extension
- b. In settings, default formatter chose prettier, and format on save option enabled.
- https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648339#overview
- c. use .prettierrc file in your project for customizing formatting.
-
-<!-- Notes from ZTM:
+<!-- Notes from ZTM:---------------------------------------------
 
 Links
 https://drive.google.com/drive/folders/15j8wAjPo26DuqQuY11b2UuU_1kJStcEB
@@ -32,5 +27,20 @@ https://unsplash.com/ -for images
 https://www.w3schools.com/jsref/dom_obj_event.asp	all the events that happens, in the DOM?
 
 Typed < to get Doctype
-Typed doc to get meta tags and the rest 
-alt+z to shorten the code if it's too long-->
+Typed doc to get meta tags and the rest  or !
+
+VS CODE TIPS!----------------------------------------------------
+ alt click on similar names, has the same effect as ctrl + D 
+ alt+z to shorten the code if it's too long-->
+
+// user snippets!!!!!!!!!!!
+    Create your own short commands for anythign!?   
+        //C:\Users\jonat\AppData\Roaming\Code\User\snippets\globalsnippetsNov2022.code-snippets
+        //https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648339#overview
+        file - preference- user snippets- create a global snippet
+
+        //setting up formatting
+        a. installed prettier extension
+        b. In settings, default formatter chose prettier, and format on save option enabled.
+        https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648339#overview
+        c. use .prettierrc file in your project for customizing formatting.
