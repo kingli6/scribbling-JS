@@ -48,6 +48,7 @@ main {
   margin-bottom: 1rem;
   border: #333 1px solid;
   word-spacing: 2px;
+  /* flex-a: center; */
   /* padding: 9rem; */
 }
 
