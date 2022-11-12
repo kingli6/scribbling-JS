@@ -17,6 +17,7 @@
  *
  */
 //Selecting elements
+const totalScoreDisplayElement = document.getElementById('total-score');
 const player0Element = document.querySelector('.player--0');
 const player1Element = document.querySelector('.player--1');
 
@@ -40,6 +41,8 @@ score1Element.textContent = 0;
 diceElement.classList.add('hidden');
 
 const scores = [0, 0];
+const toWinReach = 30;
+totalScoreDisplayElement.textContent = toWinReach;
 let activePlayer = 0;
 let currentScore = 0;
 let playing = true;
@@ -99,7 +102,7 @@ btnHold.addEventListener('click', function () {
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
     //2. check if players score is >= 100
-    if (scores[activePlayer] >= 30) {
+    if (scores[activePlayer] >= toWinReach) {
       //finish the game
       playing = false;
       diceElement.classList.add('hidden');

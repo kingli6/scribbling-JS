@@ -34,6 +34,21 @@ main {
   border-radius: 9px;
   overflow: hidden;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.title {
+  display: flex;
+  flex: 100%;
+  flex-direction: row;
+  align-items: top;
+  font-size: 4rem;
+  word-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  border: #333 1px solid;
+  word-spacing: 2px;
+  /* padding: 9rem; */
 }
 
 .player {
