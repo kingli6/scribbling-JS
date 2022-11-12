@@ -1,0 +1,198 @@
+
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+
+}
+
+/* Video Background */
+.video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;      /**error  wv instead of vw... and it wasn't noticed :'(*/
+  width: 100vw; /*width and height to center the image, but @media query is needed*/
+  height: auto;
+
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;  /* video-overlay to read easier the things on the foreground. stamp: 9:15*/
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.35);
+
+}
+
+/* Container */
+.container {
+  min-width: 580px; /*when we shift window, this will hold the minimum size for the container*/
+  min-height: 304px;
+  color: black;
+  margin: 0 auto;
+  padding: 25px 50px;
+  border-radius: 5px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.85);
+
+}
+
+.input-container {
+  position: relative;
+  top: 20px;
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Form */
+.form {
+  width: 480px;
+}
+
+label {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+input {
+  width: 95%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #fff;
+  outline: none;
+
+}
+
+/* Button */
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 15px;
+  border: none;
+  text-transform: uppercase;
+  background: #006959;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+/* Countdown */
+ul {
+  margin-left: -45px;
+}
+
+li {
+
+  font-size: 30px;
+  list-style-type: none;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 80px;
+  text-align: center;
+}
+
+/* Complete */
+.complete {
+  position: relative;
+  top: 60px;
+}
+
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .video-background {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  video {
+    object-fit: cover; /*video fits what ever cover it's in, without being distorted*/
+    object-position: 70%; /*on mobile view, clock was to the right. this centered it...*/
+    margin-top: -1px;
+  }
+
+  .container {
+    min-width: unset;   /*readjusting width on .container. in @media query*/
+    width: 95vw;
+    min-height: 245px;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .input-container {
+    top: unset;
+  }
+
+  .countdown {
+    position: relative;
+    top: 10px;
+  }
+
+  .form {
+    width: unset;
+  }
+
+  input {
+    width: 93%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+
+  li span {
+    font-size: 40px;
+  }
+}
+
+
+/* https://www.udemy.com/course/javascript-web-projects-to-build-your-portfolio-resume/learn/lecture/20633244?start=0#reviews
+
+Notes
+a. width and height to center the image, but @media query is needed
+    error I wrote wv instead of vw (vertical height)... and it wasn't noticed :'(
+b. video fits whatever cover it's in, without being distorted
+    //object-position: 70%; on mobile view, clock was to the right. this centered it...
+c. video-overlay to read easier the things on the foreground. stamp: 9:15
+
+https://www.udemy.com/course/javascript-web-projects-to-build-your-portfolio-resume/learn/lecture/20633260#reviews
+d. Creating a container in html and adjusting its css
+  //when we shift window, this will hold the minimum size for the container
+c. readjusting width on .container. in @media query  2:46
+*/

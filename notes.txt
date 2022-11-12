@@ -13,3 +13,24 @@ file - preference- user snippets- create a global snippet
  b. In settings, default formatter chose prettier, and format on save option enabled.
  https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648339#overview
  c. use .prettierrc file in your project for customizing formatting.
+
+<!-- Notes from ZTM:
+
+Links
+https://drive.google.com/drive/folders/15j8wAjPo26DuqQuY11b2UuU_1kJStcEB
+https://drive.google.com/drive/folders/18y0EWNPERSbKc57DO64ZLbZZXjK1I3fa
+https://zerotomastery.io/community/coding-challenges/
+
+https://cdnjs.com/libraries/font-awesome
+https://fontawesome.com/icons/house?s=solid&f=classic
+https://heropatterns.com/
+https://fonts.google.com/?query=mon
+
+Not sure why I would need this https://htmldom.dev/
+loading.io -for animation 
+https://unsplash.com/ -for images
+https://www.w3schools.com/jsref/dom_obj_event.asp	all the events that happens, in the DOM?
+
+Typed < to get Doctype
+Typed doc to get meta tags and the rest 
+alt+z to shorten the code if it's too long-->

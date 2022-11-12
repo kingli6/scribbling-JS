@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    /* min-height: 100vh; */
+    background-color: whitesmoke;
+    font-family: Bebas Neue, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+   margin-bottom: 15px; 
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.8);
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-container {
+    /* border: 1px;
+    border-color: black;
+    border-style: solid; */
+    margin: 5px 20%;
+}
+.image-container img {
+    width: 100%;
+    margin-top: 5px;
+}
+/* Media query for img size */
+@media screen and (max-width: 600px){
+    h1 {
+        font-size: 20px;
+    }
+    .image-container{
+        margin:10px;
+    }
+}
+
+/* steps */
+/* https://www.udemy.com/course/javascript-web-projects-to-build-your-portfolio-resume/learn/lecture/19961166#overview
+
+1. https://fonts.google.com/specimen/Bebas+Neue?query=bebas
+6. https://unsplash.com/photos/nWECYtdrus8
+
+1- adding custom font. Bebas Neue. Using whitesmoke background-color
+2- placing the h1 text-align: center
+3- we've placed the loader.svg in a img tag. We can sytle it so it's in the middle.
+    background: rgba(255,255,255,0.8);made everything opaque? A. No, just the horizontal area.
+4- .loader img (child of the class loader)
+    position: fixed; means it will stay there even if people scroll...
+    transform: translate is needed because without it, the TOP RIGHT CORNER of the img is centered. AND NOT THE middle of the img
+    https://www.udemy.com/course/javascript-web-projects-to-build-your-portfolio-resume/learn/lecture/19961166#overview stamp: 10:20
+5- hidden on the img div tag to temporarily hide it
+6- adding images to our page from unsplash.com
+7- fixing .image-container and .image-container img. Looking at the dev tool on the browser in a phone size.
+    looking at what looks good and applying it in in a media queury. 
+
+*/

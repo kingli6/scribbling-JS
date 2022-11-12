@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;  /*we want entire screen to be the body, even if we change the screen*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(37, 37, 37);
+}
+
+.button-container {
+    border:2px solid black;
+    padding: 10px;
+    border-radius: 7px; /*"makes everything look modern"*/
+    box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.7);
+            /*  inset- shadow is on the inside
+                0 -horizontell offset. We want the shadow to be up and down
+                20px -vertical offset
+                4px -blur, how solid or not solid the color is.
+                -19px -spread how far the shadow will spread. neg value will reduce the spread.
+            */
+}
+
+button {
+    cursor: pointer;    /* mouse cursor turns to a hand symbol*/
+    outline: none;
+    width: 120px;
+    height: 75px;
+    font-family: Barlow, sans-serif;
+    font-size: 25px;
+    color:white;
+    text-shadow: 0 2px 5px black;
+    background: linear-gradient(to top, #696969, #575757);
+    border: 2px solid black;
+    border-radius: 7px;
+    box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.4), 0 12px 12px 0 rgba(0,0,0,0.3);/*we'll be using two box-shadows at once 7:07. We are cutting it in half and giving it a illusion that it's being pressed in... 8:20*/
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #696969, #575757);   /*it will look like the shadows are flipped when hovered over it.*/
+}
+
+button:active {
+    transform: translateY(3px); /*effect of button being pushed in.*/
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.3);
+}
+/* Notes
+a. Importing Barlow font:  https://fonts.google.com/specimen/Barlow?query=barlow#styles
+b. Fixing the body          //we want entire screen to be the body, even if we change the screen
+    background, display
+
+    https://www.udemy.com/course/javascript-web-projects-to-build-your-portfolio-resume/learn/lecture/19357222#reviews
+c. .button-container, followed by #button. we'll be using two box-shadows at once 7:07. We are cutting it in half and giving it a illusion that it's being pressed in... 8:20
+
+d.background: linear-gradient(to bottom, #696969, #575757);it will look like the shadows are flipped when hovered over it.
+
+e. Button:hover, buttun:active.. transform: translateY(3px); /*effect of button being pushed in.
+
+
+
+*/
