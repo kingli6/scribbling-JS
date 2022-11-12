@@ -1,3 +1,8 @@
+How to use npm or npx
+https://www.udemy.com/course/complete-react-developer-zero-to-mastery/learn/lecture/29209634#overview
+    npm i -g packagename (-g means installing gloabally)
+    npm list -g packagename //will show you were it is installed. 
+
 Instructions on using npm and yarn
 ------------------------------------------------------------
 Install dependencies from package.json: npm install == yarn
