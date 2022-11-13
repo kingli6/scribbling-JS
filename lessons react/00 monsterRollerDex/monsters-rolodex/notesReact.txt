@@ -1,0 +1,65 @@
+
+
+13 nov 
+    difference between a class and a function
+    class App extends Components{
+        render(){
+            your logic
+        }
+    }
+    vs
+    function App(){
+        your logic
+    }
+
+    classes vs hooks
+        -Hooks seems like a new method that could be used instead of classes.
+        "fuctional components with hooks" -is the modern way to write react? vid 27, time 1:05
+    
+    Over view of react
+        -package.json is where all the packages are saved. 
+        -[src]-index.js         //is the main app launched (root) 
+            root.render(
+                        <React.StrictMode>
+                        <App />             <--- here is our app 
+                        </React.StrictMode>
+                        );
+
+        -[public]-index.html        //is the container? Similar to razor pages. 
+        -[src]-App.js       //is where you write your logic?
+
+How to use npm or npx
+https://www.udemy.com/course/complete-react-developer-zero-to-mastery/learn/lecture/29209634#overview
+    npm i -g packagename (-g means installing gloabally)
+    npm list -g packagename //will show you were it is installed. 
+with npx you install use and delete right away. (Not sure why that's used for building react app...)
+
+-npm build //???
+-npm run eject???
+
+
+Instructions on using npm and yarn
+------------------------------------------------------------
+Install dependencies from package.json: npm install == yarn
+Install a package and add to package.json: npm install package --save == yarn add package
+Install a devDependency to package.json: npm install package --save-dev == yarn add package --dev
+Remove a dependency from package.json: npm uninstall package --save == yarn remove package
+Upgrade a package to its latest version: npm update --save == yarn upgrade
+Install a package globally: npm install package -g == yarn global add package
+
+halmstad energi och miljö
+avfalls ahantering 
+I18 or copy (system) that chooses the right language for the app
+
+//To have a good overview of where everything is. 
+    Oz intuitivly goes in to places just to confirm his intuition. his guess to see if it exists. 
+
+    Using search feature of the vs CODE
+    Coding with debugger on
+    looking at the html inspect feature to find the "button name" or variable name.
+
+        react native -its mobile app
+
+    TLDR 
+    welyn 
+    Qi 
