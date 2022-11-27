@@ -4,8 +4,10 @@ BLOCK SCOPE (ES6/JS)
 https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648481#overview 
     -Variables are accessible only inside block (block scoped)
     -However, this only applies to let and const variables. 
-        var is accessible anywhere?????
-    -Functions are also block scoped (only in 'strict mode';)   timestamp 6:30 
+        var is accessible anywhere????? No. It is in a function. It is function-scoped...
+            https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648487?start=0#overview 
+            time stamp 12:40
+    -Functions are also block scoped (only in 'strict mode';)   timestamp 6:30 or vid 93, time 14:15
         does this mean otherwise, you have access?
 
 
