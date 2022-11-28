@@ -1,10 +1,12 @@
+'use strict';
 const jonas20 = {
-  year: 2002,
+  year: 1988,
   calcAge: function () {
-    console.log(this);
+    console.log(this + '<-- console logging this');
     console.log(2022 - this.year);
   },
 };
+console.log('calculating Jonas age');
 jonas20.calcAge();
 
 //Creating a new object to test if this will refer to jonas or matilda. IT REFERS TO the
@@ -24,3 +26,18 @@ matilda10.calcAge();
 
 const f = jonas20.calcAge; //notice that you are not using().  () means to run it.
 //f();    //will produce undefined (cannot read property year)
+
+//Testing some other stuff
+console.log('\nTesting some other stufff.................');
+
+const just_the_tip = cost => {
+  if (100 < cost < 300) {
+    console.log(cost);
+    return 1;
+  } else {
+    console.log('not sure');
+    return 3696969;
+  }
+};
+
+console.log(just_the_tip(400));
