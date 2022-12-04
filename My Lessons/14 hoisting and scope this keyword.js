@@ -21,7 +21,7 @@ this points to the class or object that's this is in.
     without strict mode, this will point to the global variable. or the window function/method
     https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648501#overview time 2:50
 
-    -arrow function don't get a 'this' keyword. this will use srrounding function (lexical this)
+    -arrow function don't get a 'this' keyword. this will use surrounding function (lexical this)
     -simple function call this will return undefined. (in strict mode, otherwise it will use the global variable(window(int the browser)))
     -event listner works! this will point to the DOM element that the handler is attached to.
 --you can use instead new, call, apply, bind.... but I dont know how they work.
@@ -31,7 +31,7 @@ this points to the class or object that's this is in.
     
     *Hoisting?
     * To be able to have access to something before being declared. Like functions. 
-    But not arrow functions or fucntion expression (const somename = function(var1, var2)return something;)
+    But not arrow functions or function expression (const somename = function(var1, var2)return something;)
     * 
     Summary
     var will initiate but will return undifined if called early. var has a function scope. Meaning; allowed everywhere in a function.
