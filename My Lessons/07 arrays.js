@@ -26,6 +26,7 @@ const just_the_tip = cost => {
   } else tip = 0.2;
   return cost * tip;
 };
+//let somefunction name = variable =>{..implementation..}
 
 const caltTip = cost => {
   return cost >= 50 && cost <= 300 ? cost * 0.15 : cost * 0.2;
@@ -35,6 +36,7 @@ const bills = [125, 555, 44];
 const tip = [caltTip(bills[1]), just_the_tip(bills[1])];
 console.log(tip);
 
+//let anotherFunction = function (parameter){implementation};
 console.log('Exercise1........');
 const calcAge = function (birthyear) {
   return 2022 - birthyear;

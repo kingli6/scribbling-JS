@@ -3,7 +3,7 @@ Step 1. Understand the problem.
     Ask the right questions to get a 
     clear picture of the problem
 
-Step 2. Dive and conquer. Break big 
+Step 2. Divide and conquer. Break big 
     problems into smaller sub-problems.
 
 Step 3. Don't be afraid to do as much
@@ -16,3 +16,8 @@ https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/226483
     */
 
 //Try printing the entire object to see if types are correct...
+
+/*
+observe, think, act, think
+stop, observe, think, act, stop...
+*/
