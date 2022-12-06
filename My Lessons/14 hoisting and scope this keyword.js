@@ -1,6 +1,7 @@
 //this keyword points to the object that's calling. here's an example
 const jonas20 = {
   year: 2002,
+  //Jonas has a calcAge function that others can adobt...
   calcAge: function () {
     console.log(this);
     console.log(2022 - this.year);
